@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light');
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
-
+ 
 :root {
-
+    --color-invalid-input: red;
+    --color-valid-input: green;
 }
 
 * {
@@ -17,15 +18,22 @@ body {
 }
 
 .container {
-    width: 70%;
+    width: max(5rem, 50vw, 900px);
     height: 100vh;
     background-color: aliceblue;
+    display: flex;
+}
+
+@media screen and (max-width: 600px){
+    .left-side {
+        display: none;
+    }
 }
 
 .left-side {
     background-image: url("img/leftside.jpg");
     background-size: 100% 100%;
-    width: 40%;
+    width: 45vw;
     height: 100vh;
     vertical-align: middle;
 }
@@ -43,7 +51,7 @@ body {
 .logo {
     background-color: rgba(0,0,0,0.2);
     width: auto;
-    height: 200px;
+    height: 150px;
     position: relative;
     top: 20%;
     display: flex;
@@ -54,9 +62,47 @@ body {
 .logotext {
     color: aliceblue;
     font-family: Shadows Into Light;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 img {
-    height: 150px;
+    height: 70%;
 }
+
+.right-side {
+    margin-top: 4rem;
+}
+
+.right-top p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    padding-left: 2rem;
+    padding-right: 6rem;
+    padding-bottom: 2rem;
+}
+
+.right-bot {
+}
+
+h2 {
+    width: 100%;
+}
+
+.middle {
+    background-color: gray;
+    padding-left: 2rem;
+    padding-right: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.middle > div {
+    padding-right: 4rem;
+}
+
+
