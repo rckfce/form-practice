@@ -120,10 +120,14 @@ input:focus {
     box-shadow: 1.0px 2.0px 2.0px rgba(0,0,0,0.38);
 }
 
-.hidden {
+#hidden {
     color: var(--color-invalid-input);
     padding-top: 1px;
     font-size: 0.8rem;
+}
+
+.hidden {
+    display: none;
 }
 
 .error {

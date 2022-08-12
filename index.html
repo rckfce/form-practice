@@ -68,8 +68,8 @@
                                     <span>PASSWORD</span>
                                 </label>
                             </p>
-                            <input class="error" type="password" id="pwd" name="password" required>
-                            <p class="hidden">*Passwords do not match</p>
+                            <input class="error" type="password" id="pwd" name="password" minlength="8" required>
+                            <p id="hidden">*Passwords do not match</p>
                         </div>
 
                         <div>
@@ -78,7 +78,7 @@
                                     <span>CONFIRM PASSWORD</span>
                                 </label>
                             </p>
-                            <input class="error" type="password" id="pwd-conf" name="password-conf" required>
+                            <input class="error" type="password" id="pwd-conf" name="password-conf" minlength="8" required>
                         </div>
                         
                     </div>
