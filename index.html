@@ -32,7 +32,7 @@
                                     <span>FIRST NAME</span>
                                 </label>
                             </p>
-                            <input type="text" id="name" name="firstName">
+                            <input type="text" id="name" name="firstName" placeholder="Jane">
                         </div>
 
                         <div>
@@ -41,7 +41,7 @@
                                     <span>LAST NAME</span>
                                 </label>
                             </p>
-                            <input type="text" id="surname" name="lastName">
+                            <input type="text" id="surname" name="lastName" placeholder="Doe">
                         </div>
 
                         <div>
@@ -50,7 +50,7 @@
                                     <span>EMAIL</span>
                                 </label>
                             </p>
-                            <input type="email" id="mail" name="usermail">
+                            <input type="email" id="mail" name="usermail" placeholder="JaneDoe@gmail.com">
                         </div>
 
                         <div>
@@ -59,7 +59,7 @@
                                     <span>PHONE NUMBER</span>
                                 </label>
                             </p>
-                            <input type="tel" id="number" name="phoneNumber">
+                            <input type="tel" id="number" name="phoneNumber" placeholder="3333333">
                         </div>
 
                         <div>
@@ -68,7 +68,8 @@
                                     <span>PASSWORD</span>
                                 </label>
                             </p>
-                            <input type="password" id="pwd" name="password">
+                            <input class="error" type="password" id="pwd" name="password" required>
+                            <p class="hidden">*Passwords do not match</p>
                         </div>
 
                         <div>
@@ -77,13 +78,15 @@
                                     <span>CONFIRM PASSWORD</span>
                                 </label>
                             </p>
-                            <input type="password" id="pwd-conf" name="password-conf">
+                            <input class="error" type="password" id="pwd-conf" name="password-conf" required>
                         </div>
                         
                     </div>
-                    <button type="submit">Create account</button>
+                    <div class="bottom">
+                        <button type="submit">Create account</button>
+                    </div>
                 </form>
-                <p>Already have an account? <a href="#">Log in</a></p>
+                <p class="bottom">Already have an account? <a href="#">Log in</a></p>  
             </div>
         </div>
     </div>
